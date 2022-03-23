@@ -1,4 +1,4 @@
-package com.example.baffleframework.Example;
+package com.example.baffleframework.example;
 
 import com.example.baffleframework.baffleUtils.ProxyBandParam;
 import com.example.baffleframework.baffleUtils.PrxyBndParmTableHandler;

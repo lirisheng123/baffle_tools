@@ -14,7 +14,6 @@ public interface PrxyBndParmInterface {
 
     public boolean isBand();
 
-    public boolean isFilterBand();
     public  Map<String, List<Object>> getFilterValue();
     public Map<String, Object> getBandValue();
     public Class<?>  getBandClazz();

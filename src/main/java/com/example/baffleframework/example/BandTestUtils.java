@@ -1,4 +1,4 @@
-package com.example.baffleframework.Example;
+package com.example.baffleframework.example;
 
 import com.example.baffleframework.baffleUtils.ProxyBandParam;
 import com.example.baffleframework.baffleUtils.ProxyBandUtils;
@@ -56,7 +56,7 @@ public class BandTestUtils {
 
     public static void busiFilterBand(){
 
-        //外调方法设置挡板
+        //外调方法-业务过滤设置挡板
         HttpClient client = new HttpClientImp();
         PrxyBndParmInterface proxyMethod =new BusiFilterPrxyBndParmTableHandler(getProxyBandParamForFilter(),"4402");
         client = (HttpClient) ProxyBandUtils.proxyBandJDKObject(client, proxyMethod);
@@ -77,7 +77,7 @@ public class BandTestUtils {
     public static ProxyBandParam getProxyBandParam(){
         ProxyBandParam param = new ProxyBandParam();
         //开启挡板
-        param.setIsBand("OFF");
+        param.setIsBand("ON");
         param.setBandValue("{\"status\":\"band\",\"message\":\"band\"}");
         return param;
     }

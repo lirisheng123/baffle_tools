@@ -63,10 +63,6 @@ public class PrxyBndParmTableHandler implements  PrxyBndParmInterface {
         return  "ON".equals(bandParam.getIsBand());
     }
 
-    @Override
-    public boolean isFilterBand() {
-        return  "ON".equals(bandParam.getIsFilterBand());
-    }
 
     @Override
     public Map<String, List<Object>> getFilterValue() {
